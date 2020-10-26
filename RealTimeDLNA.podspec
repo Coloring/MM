@@ -25,7 +25,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'Classes/***/**/*'
+  s.source_files = 'MRDLNA/**/*'
+  s.source_files = 'RTSP/**/*'
+  s.source_files = 'AVEncoder/**/*'
+
   
   # s.resource_bundles = {
   #   'MRDLNA' => ['MRDLNA/Assets/*.png']
@@ -42,7 +45,7 @@ Pod::Spec.new do |s|
   }
   
   s.subspec 'MRC' do |sp|
-      sp.source_files = 'Classes/MRC/**/*'
+      sp.source_files = 'MRC/**/*'
       sp.requires_arc = false
   end
 end
