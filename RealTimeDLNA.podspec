@@ -20,14 +20,15 @@ Pod::Spec.new do |s|
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Coloring' => '751590012@qq.com' }
-  s.source           = { :git => 'https://github.com/Coloring/RealTimeDLNA.git', :tag => s.version.to_s }
-  s.social_media_url = 'http://cocomccree.cn/'
+  s.source           = { :git => 'https://github.com/Coloring/RealTimeDLNA.git', :tag => s.version }
+  # s.social_media_url = 'http://cocomccree.cn/'
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'MRDLNA/**/*'
-  s.source_files = 'RTSP/**/*'
-  s.source_files = 'AVEncoder/**/*'
+  s.source_files = 'MRDLNA/*'
+  s.source_files = 'MRDLNA/MRC/*'
+  s.source_files = 'RTSP/*'
+  s.source_files = 'AVEncoder/*'
 
   
   # s.resource_bundles = {
@@ -45,7 +46,7 @@ Pod::Spec.new do |s|
   }
   
   s.subspec 'MRC' do |sp|
-      sp.source_files = 'MRC/**/*'
+      sp.source_files = 'MRDLNA/MRC/**/*'
       sp.requires_arc = false
   end
 end
