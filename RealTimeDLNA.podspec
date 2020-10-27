@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   }
   
   s.subspec 'MRC' do |sp|
-      sp.source_files = 'MRDLNA/MRC/**/*'
+      sp.source_files = 'MRDLNA/MRC/*'
       sp.requires_arc = false
   end
 end
